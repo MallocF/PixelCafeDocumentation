@@ -74,10 +74,30 @@
     \noindent The next list will show all the options the main menu will have to have...
 
     \begin{itemize}
-        \item Party UI
-        \item Store UI
-        \item Trade UI
-        \item Leaderboard / Rank UI
+        \item \sc{Party UI}
+        \item \sc{Store UI}
+        \item \sc{Trade UI}
+        \item \sc{Leaderboard / Rank UI}
         \label{list:MainMenuUI}
     \end{itemize}
+
+    \subsubsection{Party UI}
+
+    \noindent The party UI is a group of UI's that should give the player options to:
+    \vspace{5mm}
+    \begin{itemize}
+        \item \sc{Create parties}
+        \item \sc{Invite players to parties}
+        \item \sc{Remove players from parties}
+        \item \sc{Start a game with your party}
+    \end{itemize}
+
+    \vspace{5mm}
+    \noindent When creating parties the party maker/creator should be allowed to make it an \textcolor{green}{opened} or
+    \textcolor{red}{closed} party. If the party is open then it will be displayed for everyone to see and join, however if the party is closed then
+    only the party creator can invite other players that \textcolor{importantColor}{aren't} in a party.
+    \textcolor{importantColor}{Only the party creator} can kick / remove players from his party. And finally
+    upon pressing play the game should teleport everyone in the party to the desired location, if the teleport fails
+    the players are to be informed of the failed teleport.
+
 \end{document}
