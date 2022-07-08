@@ -42,6 +42,9 @@
 \definecolor{moneyColor}{RGB}{123, 230, 29}
 \definecolor{noteColor}{RGB}{14, 192, 208}
 
+% Custom commands
+\newcommand{\itemizeListDisplay}[1]{\sc{#1}}
+
 % Implementing the author detail
 \title{Pixel Cafe Game Documentation}
 \author{Aidan Abdulov}
@@ -74,10 +77,10 @@
     \noindent The next list will show all the options the main menu will have to have...
 
     \begin{itemize}
-        \item \sc{Party UI}
-        \item \sc{Store UI}
-        \item \sc{Trade UI}
-        \item \sc{Leaderboard / Rank UI}
+        \item \itemizeListDisplay{Party UI}
+        \item \itemizeListDisplay{Store UI}
+        \item \itemizeListDisplay{Trade UI}
+        \item \itemizeListDisplay{Leaderboard / Rank UI}
         \label{list:MainMenuUI}
     \end{itemize}
 
@@ -86,11 +89,11 @@
     \noindent The party UI is a group of UI's that should give the player options to:
     \vspace{5mm}
     \begin{itemize}
-        \item \sc{Create parties}
-        \item \sc{Invite players to parties}
-        \item \sc{Remove players from parties}
-        \item \sc{Start a game with your party}
-        \item \sc{Join friend}
+        \item \itemizeListDisplay{Create parties}
+        \item \itemizeListDisplay{Invite players to parties}
+        \item \itemizeListDisplay{Remove players from parties}
+        \item \itemizeListDisplay{Start a game with your party}
+        \item \itemizeListDisplay{Join friend}
     \end{itemize}
 
     \vspace{5mm}
@@ -99,7 +102,9 @@
     only the party creator can invite other players that \textcolor{importantColor}{aren't} in a party.
     \textcolor{importantColor}{Only the party creator} can kick / remove players from his party. And finally
     upon pressing play the game should teleport everyone in the party to the desired location, if the teleport fails
-    the players are to be informed of the failed teleport.
+    the players are to be informed of the failed teleport. When creating a party the player will be presented with more then just one
+    option to make the party opened or closed. The next list will show you all the options the player will be promted upon making a party.
+    \vspace{5mm}
 
 
 \end{document}
