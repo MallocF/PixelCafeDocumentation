@@ -56,6 +56,10 @@
 \newcommand{\itemizeListDisplay}[1]{\sc{#1}}
 \newcommand{\colorLink}[3]{\hyperlink{#2}{\textcolor{#1}{#3}}}
 \newcommand{\linkSection}[1]{\hypertarget{Section:#1}{\section{#1}}}
+\newcommand{\fakeCaption}[1]{
+    \vspace{2mm}
+    \noindent #1
+}
 
 % Implementing the author detail
 \title{Pixel Cafe Game Documentation}
@@ -196,11 +200,89 @@
     \vspace{2mm}
 
     \hypertarget{Sub Section:Jobs}{\subsection{Jobs}}
-    \subsubsection{Drinks Assembling }
+    \subsubsection{Drinks Assembling}
+        \noindent Drink assembling as the name says, is a job that requiers someone to assembly drinks, but before
+        we can explain the process that has to be done, let's first off start listing everything we need for the drink assembler to do his/her job:
+        \vspace{2mm}
+
+        \begin{multicols}{2}
+            \begin{minipage}{.4\textwidth}
+                \begin{enumerate}
+                    \item Blender
+                    \item Grinding Machine
+                    \item Steamer
+                    \item Ice Maker
+                    \item Cup \& Lid Holder
+                    \item Syrup Holders / Dispensers
+                    \item Cream Holders / Dispensers
+                    \item Cutting Board
+                    \item Juicer
+                \end{enumerate}
+
+                \begin{center}
+                    \fakeCaption{\sc{List of tools}}
+                \end{center}
+            \end{minipage}
+           
+
+            \begin{minipage}{.4\textwidth}
+                \begin{itemize}
+                    \item 
+                        \noindent \itemizeListDisplay{Syrups}
+                        \begin{enumerate}
+                            \item Caramel
+                            \item Chocolate
+                            \item Vanilla
+                            \item Honey
+                        \end{enumerate}
+                    \item 
+                        \noindent \itemizeListDisplay{Creams}
+                        \begin{enumerate}
+                            \item Caramel
+                            \item Chocolate
+                            \item French Vanilla
+                            \item Hazlenut
+                            \item Coconut
+                            \item Almond
+                            \item Peppermint
+                            \item Pumpkin Spice
+                        \end{enumerate}
+                    \item 
+                        \noindent \itemizeListDisplay{Milk}
+                        \begin{enumerate}
+                            \item Skin Milk
+                            \item Whole Milk
+                            \item Soy Milk
+                            \item Almond Milk
+                            \item Coconut Milk
+                        \end{enumerate}
+                    \item
+                        \noindent \itemizeListDisplay{Toppings}
+                        \begin{enumerate}
+                            \item Cookies Crumbs
+                            \item Chocolate Chips
+                            \item Sprinkles
+                            \item Cherrys
+                            \item Lemons
+                            \item 
+                                \noindent Powders
+                                \begin{enumerate}
+                                    \item Chocolate Powder
+                                    \item Vanilla Powder
+                                \end{enumerate}
+                        \end{enumerate}
+                \end{itemize}
+
+                \begin{center}
+                    \fakeCaption{\sc{List of ingridients}}
+                \end{center}
+            \end{minipage}
+        \end{multicols}
     \subsubsection{Baking}
     \subsubsection{Serving / Taking Orders}
     \subsubsection{Cleaning}
-    \subsubsection{Barista}
+    \subsubsection{Ordering \& Storing}
+    \subsubsection{Cooking}
 
     \linkSection{Player Data}
 
