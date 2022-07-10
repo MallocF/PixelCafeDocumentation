@@ -21,7 +21,7 @@
 \usepackage{tikz} % for high detailed drawing
 \usepackage{multicol} % To put things side by side
 \usepackage{rotating} % For rotating objects
-\usepackage{draftcopy} % For adding watermarks
+% \usepackage{draftwatermark} % For adding watermarks
 \usepackage{hyperref} % for hyper links
 
 % Setting up the default image path
@@ -197,16 +197,6 @@
         And that's the \emph{brief} overview of the game, for more detail on everything else please keep reading the document.
     \end{spacing}
 
-    \subsection{Player Interactions}
-    \begin{spacing}{1.2}
-        \noindent Players will be allowed to take tools / items with them. Upon taking an item it will take a slot
-        either in your right or left hand depending on which hand u used to pick it up. There are \emph{two} types of things you can pick up,
-        light things [such as knives, forks, etc], and heavy things [such as chairs, tables, etc]. When carrying an heavy thing
-        \textcolor{importantColor}{\emph{both}} of your hands are requiered to be free. Certain things such as putting food on an
-        tray can help you carry multiple things at once.
-    \end{spacing}
-    \vspace{2mm}
-
     \hypertarget{Sub Section:Jobs}{\subsection{Jobs}}
     \subsubsection{Drinks Assembling}
         \noindent Drink assembling as the name says, is a job that requiers someone to assembly drinks, but before
@@ -373,6 +363,29 @@
     \subsubsection{Ordering \& Storing}
     \subsubsection{Cooking}
 
+    \linkSection{Tools}
+        \subsection{Player Interactions \& Item Basics}
+            \begin{spacing}{1.2}
+                \noindent When a player hovers over an interectable item the item will start to glow to indicate that the item can be interected with. There
+                are three types of interectable items:
+                \begin{enumerate}
+                    \item Pickable Items
+                    \item Usable Items
+                    \item Pickable \& Usable Items
+                \end{enumerate}
+
+                \noindent Pickable Items are items that can only be picked up and can not be used directly (ie any ingridient), Usable items are items that can \emph{only be used} and
+                \textcolor{importantColor}{\emph{not}} picked up (ie sink), and pickable \& usable items are items that can be both picked up and then used after being picked up (ie knife).
+
+                \vspace{3mm}
+                \noindent An example of using all of these 3 would be as follows, you would pick up an lemon (pickable item) and drop it off at the cutting board (usable item), afterwards you would
+                take a knife (pickable \& usable item) and use it on the cutting board to cut the lemon.
+            \end{spacing}
+            \vspace{2mm}
+
+            \subsection{Pickable Items}
+            \subsection{Usable Items}
+            \subsection{Pickable \& Usable Items}
     \linkSection{Player Data}
 
     \linkSection{Monetization}
