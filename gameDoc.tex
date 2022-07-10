@@ -68,7 +68,12 @@
         \item #2
     \end{itemize}
 }
-
+\newcommand{\displayItem}[2]{
+    \noindent #1
+    \begin{itemize}
+        \item #2
+    \end{itemize}
+}
 % Implementing the author detail
 \title{Pixel Cafe Game Documentation}
 \author{Aidan Abdulov}
@@ -396,8 +401,34 @@
             \vspace{2mm}
 
             \subsection{Pickable Items}
+                \begin{enumerate}
+                    \item Ice
+                    \item Fruits
+                    \item \displayItem{Supply Bags}{You get them from ordering specific ingridients, they usually contain multiple of an ingridient type in them}
+                    \item \displayItem{Dishes}{Used for putting different types of food on it}
+                \end{enumerate}
             \subsection{Usable Items}
+                \begin{enumerate}
+                    \item \displayItem{Blender}{This machine is used for blending different fruits into smoothies, and it's also used for blending ice to make cold drinks}
+                    \item \displayItem{Grinding Machine}{This Machine is used for grinding coffee beans}
+                    \item \displayItem{Steamer}{This machine is used for warming up drinks or ingridients such as milk and or water}
+                    \item \displayItem{Ice Maker}{This machine will convert water into ice overtime}
+                    \item \displayItem{Cup \& Lid Holder}{This is just a place to store your cups}
+                    \item \displayItem{Syrup Holders / Dispensers}{As the name says this machine dispenses different syrups}
+                    \item \displayItem{Cream Holders / Dispensers}{As the name says this machine dispenses different creams}
+                    \item \displayItem{Cutting Board}{This tool is used for cutting different fruits into smaller parts}
+                    \item \displayItem{Juicer}{This machine is used for squishing fruit halfs into the glass}
+                    \item \displayItem{Grater}{This is used to peel fruits into smaller parts}
+                    \item \displayItem{Sink}{Used as a water supply, also used to clean dishes}
+                    \item \displayItem{Trash}{Used for item disposal}
+                \end{enumerate}
             \subsection{Pickable \& Usable Items}
+                \begin{enumerate}
+                    \item \displayItem{Knife}{Combined with cutting board this tool can cut fruits into halfs and halfs into pieces}
+                    \item \displayItem{Tea Bags}{When combined with a cup with boiling water it can be used to make tea}
+                    \item \displayItem{Scooper}{When used on supply bag, you will take some of the supplies out of the bag}
+                    \item \displayItem{Bucket}{Used to carry things like water, ice, blended ice... etc}
+                \end{enumerate}
     \linkSection{Player Data}
 
     \linkSection{Monetization}
