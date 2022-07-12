@@ -74,6 +74,10 @@
         \item #2
     \end{itemize}
 }
+\newcommand{\displayProduct}[3]{
+    \noindent \hyperlink{Product:#1}{#1} & \textcolor{moneyColor}{10 Robux} & #3 \\ \hline
+}
+\newcommand{\linkProduct}[1]{\hypertarget{Product:#1}{\subsubsection{#1}}}
 % Implementing the author detail
 \title{Pixel Cafe Game Documentation}
 \author{Aidan Abdulov}
@@ -808,6 +812,27 @@
                         your own money which you can \emph{only} use on your self to buy stuff from the in game store.
                     \end{spacing}
                 
+                \subsection{Dev Products}
+                    \vspace{3mm}
+                    \begin{center}
+                        \begin{tabular}{|c|c|c|}
+                            \hline
+                            \sc{Dev Product Name} & \sc{Price} & \sc{Dev Product ID} \\ \hline
+                            \displayProduct{+\$10}{10 Robux}{N.A}
+                            \displayProduct{+\$100}{90 Robux}{N.A}
+                            \displayProduct{+\$500}{400 Robux}{N.A}
+                            \displayProduct{+\$1000}{720 Robux}{N.A}
+                        \end{tabular}
+                    \end{center}
+                    
+                    \linkProduct{+\$10}
+                        \noindent Gives you +10\$
+                    \linkProduct{+\$100}
+                        \noindent Gives you +100\$
+                    \linkProduct{+\$500}
+                        \noindent Gives you +500\$
+                    \linkProduct{+\$1000}
+                        \noindent Gives you +1000\$
     \linkSection{Map Design}
 
     \subsection{Main Menu Scenary Shot}
