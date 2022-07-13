@@ -67,6 +67,13 @@
 \newcommand{\linkSection}[1]{\hypertarget{Section:#1}{\section{#1}}}
 \newcommand{\subtitle}[1]{\begin{large}{\textbf{#1}}\end{large}}
 \newcommand{\specialProductSymbol}[0]{\begin{Large}\textcolor{yellow}{$\filledstar$}\end{Large}}
+\newcommand{\common}{\textcolor{commonRarityColor}{\emph{Common}}}
+\newcommand{\uncommon}{\textcolor{uncommonRarityColor}{\emph{Uncommon}}}
+\newcommand{\rare}{\textcolor{rareRarityColor}{\emph{Rare}}}
+\newcommand{\epic}{\textcolor{epicRarityColor}{\emph{Epic}}}
+\newcommand{\legendary}{\textcolor{legendaryRarityColor}{\emph{Legendary}}}
+\newcommand{\mythical}{\textcolor{mythicalnRarityColor}{\emph{Mythical}}}
+\newcommand{\unusual}{\textcolor{unusualItemQualityColor}{\emph{Unusual}}}
 \newcommand{\fakeCaption}[1]{
     \vspace{2mm}
     \noindent #1
@@ -890,12 +897,12 @@
                         
                         \noindent Rarities go as follow:
                         \begin{itemize}
-                            \item Common
-                            \item Uncommon
-                            \item Rare
-                            \item Epic
-                            \item Legendary
-                            \item Mythical
+                            \item \common
+                            \item \uncommon
+                            \item \rare
+                            \item \epic
+                            \item \legendary
+                            \item \mythical
                         \end{itemize}
     \linkSection{Map Design}
 
