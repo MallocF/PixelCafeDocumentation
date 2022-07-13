@@ -22,6 +22,7 @@
 \usepackage{multicol} % To put things side by side
 \usepackage{rotating} % For rotating objects
 % \usepackage{draftwatermark} % For adding watermarks
+\usepackage{MnSymbol} % for using multiple symbols
 \usepackage{hyperref} % for hyper links
 
 % Setting up the default image path
@@ -58,6 +59,7 @@
 \newcommand{\colorLink}[3]{\hyperlink{#2}{\textcolor{#1}{#3}}}
 \newcommand{\linkSection}[1]{\hypertarget{Section:#1}{\section{#1}}}
 \newcommand{\subtitle}[1]{\begin{large}{\textbf{#1}}\end{large}}
+\newcommand{\specialProductSymbol}[0]{\begin{Large}\textcolor{yellow}{$\filledstar$}\end{Large}}
 \newcommand{\fakeCaption}[1]{
     \vspace{2mm}
     \noindent #1
@@ -833,6 +835,24 @@
                         \noindent Gives you +500\$
                     \linkProduct{+\$1000}
                         \noindent Gives you +1000\$
+
+                \subsection{Game Pass's}
+                    \vspace{3mm}
+                    \begin{center}
+                        \begin{tabular}{|c|c|c|}
+                            \hline
+                            \sc{Gamepass Name} & \sc{Price} & \sc{Dev Product ID} \\ \hline
+                            \displayProduct{VIP}{1250 Robux}{N.A}
+                        \end{tabular}
+                    \end{center}
+
+                    \linkProduct{VIP}
+                        \noindent \textcolor{yellow}{VIP} will provide a player with
+                        \begin{itemize}
+                            \item[\specialProductSymbol] \itemizeListDisplay{$2\times$ token gain}
+                            \item[\specialProductSymbol] \itemizeListDisplay{$1.5\times$ movement speed}
+                            \item[\specialProductSymbol] \itemizeListDisplay{$1.2\times$ coin gain}
+                        \end{itemize}
     \linkSection{Map Design}
 
     \subsection{Main Menu Scenary Shot}
