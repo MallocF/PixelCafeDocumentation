@@ -74,6 +74,7 @@
 \newcommand{\legendary}{\textcolor{legendaryRarityColor}{\emph{Legendary}}}
 \newcommand{\mythical}{\textcolor{mythicalnRarityColor}{\emph{Mythical}}}
 \newcommand{\unusual}{\textcolor{unusualItemQualityColor}{\emph{Unusual}}}
+\newcommand{\valueBetween}[3]{$#1\geq #2 \leq#3$}
 \newcommand{\fakeCaption}[1]{
     \vspace{2mm}
     \noindent #1
@@ -756,6 +757,28 @@
                 The food quality value or \textbf{FQV} is a value that tells you how well kept or fresh the food you are dealing with is. \textbf{FQV}
                 start off at 100\% and slowly starts dropping down, there are 4 different stages that the food can be in at any moment in time.
                 And those stages are as follows:
+                \begin{enumerate}
+                    \item 
+                        Fresh
+                        \begin{itemize}
+                            \item \valueBetween{85}{FQV}{100}
+                        \end{itemize}
+                    \item
+                        \noindent Decent
+                        \begin{itemize}
+                            \item \valueBetween{65}{FQV}{84}
+                        \end{itemize}
+                    \item
+                        \noindent Poor
+                        \begin{itemize}
+                            \item \valueBetween{20}{FQV}{64}
+                        \end{itemize}
+                    \item
+                        \noindent Rotten
+                        \begin{itemize}
+                            \item \valueBetween{0}{FQV}{19}
+                        \end{itemize}
+                \end{enumerate}
         \linkSection{Tools}
 
         \subsection{Player Interactions \& Item Basics}
