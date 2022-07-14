@@ -69,9 +69,9 @@
 \newcommand{\linkSection}[1]{\hypertarget{Section:#1}{\section{#1}}}
 \newcommand{\linkSubSection}[1]{\hypertarget{Sub Section:#1}{\subsection{#1}}}
 \newcommand{\linkSubSubSection}[1]{\hypertarget{Sub Sub Section:#1}{\subsubsection{#1}}}
-\newcommand{\refToSection}[1]{\hypertarget{Section:#1}{#1}}
-\newcommand{\refToSubSection}[1]{\hypertarget{Sub Section:#1}{#1}}
-\newcommand{\refToSubSubSection}[1]{\hypertarget{Sub Sub Section:#1}{#1}}
+\newcommand{\refToSection}[1]{\hyperlink{Section:#1}{#1}}
+\newcommand{\refToSubSection}[1]{\hyperlink{Sub Section:#1}{#1}}
+\newcommand{\refToSubSubSection}[1]{\hyperlink{Sub Sub Section:#1}{#1}}
 \newcommand{\subtitle}[1]{\begin{large}{\textbf{#1}}\end{large}}
 \newcommand{\specialProductSymbol}[0]{\begin{Large}\textcolor{yellow}{$\filledstar$}\end{Large}}
 \newcommand{\common}{\textcolor{commonRarityColor}{\emph{Common}}}
@@ -132,11 +132,11 @@
     \noindent The next list will show all the options the main menu will have to have...
 
     \begin{itemize}
-        \item \itemizeListDisplay{Party UI}
-        \item \itemizeListDisplay{Store UI}
-        \item \itemizeListDisplay{Trade UI}
-        \item \itemizeListDisplay{Inventory UI}
-        \item \itemizeListDisplay{Leaderboard / Rank UI}
+        \item \itemizeListDisplay{\refToSubSubSection{Party UI}}
+        \item \itemizeListDisplay{\refToSubSubSection{Store UI}}
+        \item \itemizeListDisplay{\refToSubSubSection{Trade UI}}
+        \item \itemizeListDisplay{\refToSubSubSection{Inventory UI}}
+        \item \itemizeListDisplay{\refToSubSubSection{Leaderboard / Rank UI}}
         \label{list:MainMenuUI}
     \end{itemize}
 
@@ -1017,9 +1017,9 @@
 
     \linkSection{User Interfaces}
         \subsection{Main Menu UI's}
-
+            \linkSubSubSection{Party UI}
         \subsection{Main Game UI's}
 
         \subsection{Mutual UI's}
-
+            \linkSubSubSection{Store UI}
 \end{document}
