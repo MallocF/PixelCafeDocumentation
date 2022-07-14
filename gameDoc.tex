@@ -23,6 +23,8 @@
 \usepackage{rotating} % For rotating objects
 % \usepackage{draftwatermark} % For adding watermarks
 \usepackage{MnSymbol} % for using multiple symbols
+\usepackage{mathtools} % Used for more math symbols
+\usepackage{xfrac} % For more complciated fractions and to add derivitives
 \usepackage{hyperref} % for hyper links
 
 % Setting up the default image path
@@ -75,6 +77,8 @@
 \newcommand{\mythical}{\textcolor{mythicalnRarityColor}{\emph{Mythical}}}
 \newcommand{\unusual}{\textcolor{unusualItemQualityColor}{\emph{Unusual}}}
 \newcommand{\valueBetween}[3]{$#1\geq #2 \leq#3$}
+\newcommand{\FQV}{\textbf{FQV}}
+\newcommand{\FQLR}{\textbf{FQLR}}
 \newcommand{\fakeCaption}[1]{
     \vspace{2mm}
     \noindent #1
@@ -754,7 +758,7 @@
         
         \hypertarget{Sub Section:Food System}{\subsection{Food System}}
                 \noindent \emph{Every} food in the game has one thing in common, and that is the \textcolor{noteColor}{food quality value}.
-                The food quality value or \textbf{FQV} is a value that tells you how well kept or fresh the food you are dealing with is. \textbf{FQV}
+                The food quality value or \FQV is a value that tells you how well kept or fresh the food you are dealing with is. \FQV
                 start off at 100\% and slowly starts dropping down, there are 4 different stages that the food can be in at any moment in time.
                 And those stages are as follows:
                 \begin{enumerate}
@@ -779,6 +783,21 @@
                             \item \valueBetween{0}{FQV}{19}
                         \end{itemize}
                 \end{enumerate}
+                \vspace{2mm}
+
+                \begin{spacing}{1.2}
+                    \noindent When making food the final food product \FQV will~depend on the ingridients \FQV~
+                    The final product will always have the same \FQV as t~e ingridients that has the \emph{lowest}
+                    \FQV~overall. However one thing that isn't effect by the ingridients and it different for every product it self
+                    is the \emph{Food Quality Loss Rate} or \FQLR~for short. In shots \FQLR~can be described mathematically as: \[\FQLR = \frac{\partial \FQV}{\partial t}\]
+                    \noindent Your main goal is to keep \FQLR~as low as possible as to keep the \FQV~as high as long as you can. Bringing down \FQLR~to 0 is \emph{not} possible.
+                    Some things that you can do to keep \FQLR~is:
+                    \begin{itemize}
+                        \item Keep the food in it's proper place.
+                        \item Keep rooten food away from other food products.
+                        \item Keep your storage space well cleaned and refrigirated.
+                    \end{itemize}
+                \end{spacing}
         \linkSection{Tools}
 
         \subsection{Player Interactions \& Item Basics}
