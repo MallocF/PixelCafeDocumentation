@@ -84,6 +84,7 @@
 \newcommand{\valueBetween}[3]{$#1\geq #2 \leq#3$}
 \newcommand{\FQV}{\textbf{FQV}}
 \newcommand{\FQLR}{\textbf{FQLR}}
+\newcommand{\VIP}{\textcolor{yellow}{\sc{VIP}}}
 \newcommand{\fakeCaption}[1]{
     \vspace{2mm}
     \noindent #1
@@ -1031,6 +1032,21 @@
                         \includegraphics[keepaspectratio = true, width = .8\columnwidth, trim=3mm 0 0 0]{CreatePartyUI}\\
                         \vspace{1mm}
                         \noindent \textsc{Create Party UI}
+                    \end{minipage}
+
+                    \begin{minipage}{\columnwidth}
+                        \begin{spacing}{1.2}
+                            \noindent Player Party Invite UI is your typical player search and inv menu. It allows you to
+                            see the players Name, Display Name, Level, and max days survived. It will also tell you if they are a \VIP.
+                            Right next to their avatar to the right is gonna be an invite button. If the user joins another party or leaves their avatar will get removed from the list.
+                        \end{spacing}
+                    \end{minipage}
+
+                    \begin{minipage}{\columnwidth}
+                        \begin{spacing}{1.2}
+                            \noindent As previously described in the \textbf{\refToSection{Main Menu}} section, the party creation UI provides the player with
+                            options for making their party open / closed, same with the session for their friends. Also provides the bonus options if you chose the closed party type.
+                        \end{spacing}
                     \end{minipage}
                 \end{multicols}
             \linkSubSubSection{Leaderboard / Rank UI}
